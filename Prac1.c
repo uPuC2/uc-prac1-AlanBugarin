@@ -48,10 +48,14 @@ int main()
     printf("\na = %X", a);
 //6 0155
    // 0000 0001 0101 0101
-    a=a>>5 & 0xFF;
+    a= ~a;
     printf("\na = %X", a);
 //7 0001
+    a= a>>8;
+    printf("\na = %X", a);
 //8 0100
+    a=a<<8;
+    printf("\na = %X", a);
 
     return 0;
 }
